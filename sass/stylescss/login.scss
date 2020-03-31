@@ -1,0 +1,238 @@
+.span0{
+    width: 200px;
+    height: 42px;
+    line-height: 40px;
+    // background-color: red;
+    position:absolute;
+    top:-1px;
+    right:-200px;
+}
+
+
+
+body{
+    background-color: #F2F2F2;
+}
+.w1{
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo{
+    height: 88px;
+    img{
+        width: 190px;
+        height: 88px;
+        float: left;
+    }
+    .welcome{
+        width: 72px;
+        height: 88px;
+        line-height: 88px;
+        font-size: 18px;
+        float: left;
+        margin-left: 25px;
+    }
+    .log{
+        width: 130px;
+        height: 18px;
+        float:right;
+        margin-right: 100px;
+        margin-top: 60px;
+    }
+}
+.login_main{
+    border: 1px solid #BDBDBD;
+    border-top: 3px solid orange;
+    background-color: white;
+    input:focus{
+        outline:none;
+    }
+
+    .liwu{
+        width: 380px;
+        height: 40px;
+        margin-left: 300px;
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 40px;
+        
+    }
+    .name{
+        width: 380px;
+        height: 40px;
+        margin-left: 300px;
+        line-height: 40px;
+        margin-top: 5px;
+        border: 1px solid #A4A4A4;
+        text-indent: 10px;
+        position: relative;
+        .name1{
+            width: 70px;
+            float: left;
+        }
+        .name2{
+            
+            float: left;
+            input{
+                width: 100%;
+            }
+        }
+        span{            
+            @extend .span0;
+        }
+    }
+    .password{
+        width: 380px;
+        height: 40px;
+        margin-left: 300px;
+        line-height: 40px;
+        margin-top: 20px;
+        border: 1px solid #A4A4A4;
+        text-indent: 10px;
+        position: relative;
+        .password1{
+            width: 70px;
+            float: left;            
+        }
+        .password2{
+            
+            float: left;
+            input{
+                width: 300px;
+            }
+          
+        }
+        span{
+            @extend .span0;
+        }
+        
+    }
+    .repass{
+        width: 380px;
+        height: 40px;
+        margin-left: 300px;
+        line-height: 40px;
+        margin-top: 20px;
+        border: 1px solid #A4A4A4;
+        text-indent: 10px;
+        position: relative;
+        .repass1{
+            width: 70px;
+            float: left;            
+        }
+        .repass2{
+            
+            float: left;
+            input{
+                width: 300px;
+            }
+          
+        }
+        span{
+            @extend .span0;
+        }
+    }
+    .shouji{
+        width: 380px;
+        height: 40px;
+        margin-left: 300px;
+        line-height: 40px;
+        margin-top: 20px;
+        border: 1px solid #A4A4A4;
+        text-indent: 10px;
+        position: relative;
+        span{
+            @extend .span0;
+        }
+        .shouji1{
+            width: 70px;
+            float: left;
+        }
+        .shouji2{
+            
+            width: 210px;
+            float: left;
+            input{               
+                height: 100%;
+            }
+        }
+        .shouji3{
+            width: 100px;
+            float: left;
+            text-align: center;
+            input{
+                width: 90px;
+                height: 40px;
+            }
+        }
+    }
+    .yanzheng{
+        width: 380px;
+        height: 40px;
+        margin-left: 300px;
+        line-height: 40px;
+        margin-top: 20px;
+        border: 1px solid #A4A4A4;
+        text-indent: 10px;
+        position: relative;
+        span{
+            @extend .span0;
+        }
+        .yanzheng1{
+            width: 70px;
+            float: left;
+        }
+        .yanzheng2{
+            
+            float: left;
+            input{
+                width: 100%;
+            }
+        }
+    }
+    .email{
+        width: 380px;
+        height: 40px;
+        margin-left: 300px;
+        line-height: 40px;
+        margin-top: 20px;
+        border: 1px solid #A4A4A4;
+        text-indent: 10px;
+        position: relative;
+        span{
+            @extend .span0;
+        }
+        .email1{
+            width: 70px;
+            float: left;            
+        }
+        .email2{
+            
+            float: left;
+            input{
+                width: 300px;
+            }
+          
+        }
+    }
+    .zhuce{
+        width: 380px;
+        height: 40px;
+        margin-left: 300px;
+        margin-top: 50px;
+        line-height: 40px;
+        
+        color:white;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 80px;
+        input{
+            width: 100%;
+            height: 100%;
+            background-color: orange;
+        }
+    }
+}
+@import"footer_nav";
+@import "footer";

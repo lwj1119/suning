@@ -1,0 +1,171 @@
+.toolbar {
+  width: 100%;
+  background-color: #F0F8FF;
+  height: 36px;
+}
+.toolbar .toolbar-left {
+  width: 300px;
+  float: left;
+}
+.toolbar .toolbar-left li {
+  float: left;
+  line-height: 36px;
+  width: 58px;
+  text-align: center;
+  margin: 0 5px;
+}
+.toolbar .toolbar-right {
+  width: 700px;
+  float: right;
+  margin-right: 10px;
+}
+.toolbar .toolbar-right li {
+  float: left;
+  line-height: 36px;
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.logo {
+  height: 110px;
+}
+.logo .logoleft {
+  width: 190px;
+  float: left;
+}
+.logo .logoleft img {
+  width: 100%;
+}
+.logo .logoright {
+  float: left;
+  width: 160px;
+}
+.logo .logoright img {
+  width: 100%;
+}
+.logo .serach {
+  margin-left: 20px;
+  float: left;
+}
+.logo .serach .icon-sousuo {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  float: left;
+  margin-top: 30px;
+  border: 2px solid orange;
+  border-right: none;
+  color: #D8D8D8;
+  text-align: center;
+}
+.logo .serach .serach1 {
+  padding: 0;
+  margin-top: 30px;
+  width: 420px;
+  height: 40px;
+  border: 2px solid orange;
+  border-left: none;
+  float: left;
+}
+.logo .serach .serach2 {
+  padding: 0;
+  margin-top: 30px;
+  width: 120px;
+  height: 44px;
+  background-color: orange;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  float: left;
+  cursor: pointer;
+}
+.logo .serach p a {
+  padding-right: 8px;
+  margin: 0 5px;
+  border-right: 1px solid #D8D8D8;
+  color: #D8D8D8;
+  font-size: 12px;
+  line-height: 36px;
+}
+.logo .serach p a:hover {
+  color: red;
+}
+
+.footer_nav {
+  background-color: #D8D8D8;
+}
+.footer_nav .fuwu li {
+  float: left;
+  width: 20%;
+  margin: 20px 0;
+}
+.footer_nav .fuwu li p:nth-child(2) {
+  font-weight: 600;
+}
+.footer_nav .zhinan ul {
+  margin-top: 20px;
+  float: left;
+  width: 16%;
+}
+.footer_nav .zhinan ul li:last-child {
+  margin-bottom: 20px;
+}
+.footer_nav .zhinan ul li:first-child {
+  font-weight: 600;
+}
+
+.footer {
+  width: 1190px;
+  height: 200px;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 5px;
+}
+.footer p em {
+  width: 1px;
+  height: 12px;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: .8;
+  background: #595959;
+}
+.footer p:first-child {
+  margin-top: 30px;
+}
+
+.main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.main li {
+  width: 200px;
+  padding: 10px;
+  float: left;
+  margin: 0 10px 10px 0;
+  border: 1px solid #ccc;
+  height: 310px;
+  position: relative;
+}
+.main li a {
+  color: black;
+}
+.main li p {
+  width: 200px;
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+}
+.main li img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.main li span {
+  display: block;
+}
+
+/*# sourceMappingURL=list.css.map */

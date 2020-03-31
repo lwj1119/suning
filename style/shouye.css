@@ -1,0 +1,278 @@
+.toolbar1{
+    background-color:#F0F8FF;
+    height: 36px;
+    width: 1190px;
+}
+.toolbar-left{
+    /* background-color: yellow; */
+    width: 300px;
+    float:left;
+}
+.toolbar-left li{
+    float:left;
+    line-height: 36px;
+    width: 58px;
+    text-align: center;
+    margin: 0 5px;
+}
+.toolbar-right{
+    width: 700px;
+    float:right;
+    /* background-color:blue; */
+    margin-right: 10px;
+}
+.toolbar-right li{
+    float:left;
+    line-height: 36px;
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
+.logo1{
+    height: 110px;
+}
+.logoleft{
+    width: 190px;
+    float: left;
+}
+.logoleft img{
+    width: 100%;
+}
+.logoright{
+    float: left;
+    width: 160px;
+}
+.logoleft img{
+    width: 100%;
+}
+.serach{
+    margin-left: 20px;
+    float:left
+}
+.serach .icon-sousuo{
+    font-size: 40px;
+    line-height: 40px;
+    float:left;
+    margin-top: 30px;
+    border: 2px solid orange;
+    border-right:none;
+    color:#D8D8D8;
+}
+.serach1{
+    margin-top: 30px;
+    width: 420px;
+    height: 40px;
+    border: 2px solid orange;
+    border-left:none;
+    float:left;
+    color:#D8D8D8;
+}
+.serach2{
+    margin-top: 30px;
+    width: 120px;
+    height: 44px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: 600;
+    color:white;
+    float:left;
+    cursor:pointer;
+}
+.serach p a{
+    padding-right: 8px;
+    margin: 0 5px;
+    border-right: 1px solid #D8D8D8;
+    color:#D8D8D8;
+    font-size: 12px;
+    line-height:36px ;
+}
+.serach p a:hover{
+    color:red
+}
+ .nav1{   
+    height: 38px;
+} 
+.nav1 a{
+    line-height: 38px;
+    font-size: 15px;
+    margin: 0 10px;
+    font-weight: 600;
+    float:left;
+}
+.nav1 a:hover{
+    color:red
+}
+.nav1 a:first-child{
+    width: 190px;
+    height: 38px;
+    background-color: orange;
+    color:white;
+    display: block;
+    text-align: center;
+    margin-left: 0;
+}
+.nav1 img{
+    width: 170px;
+    height: 38px;
+    float:right;
+
+}
+.banner{
+    height: 482px;
+}
+.banner .banner_nav{
+    background-color:black;
+    width: 190px;
+    float:left;
+    height: 482px;
+}
+.banner_nav li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    color:white;
+    text-align: center;
+}
+.banner li em{
+    width: 1px;
+    height: 13px;
+    margin: 0 5px;
+    display:inline-block;
+    vertical-align:middle;
+    opacity:.4;
+    background:#d8d8d8  
+}
+.banner img{
+    width: 830px;
+    height: 482px;
+    float:left;
+}
+.banner .lunbo{
+    width: 830px;
+    height: 482px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.banner .lunbo ul{
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    
+}
+/* .banner .lunbo ul li{
+    float: left;
+} */
+.banner .lunbo ul li img{
+    width: 830px;
+    height: 482px;
+    display: block;
+}
+.lunbo ol{
+    position: absolute;
+    left:50%;
+    bottom: 20px;
+    width: 240px;
+    margin-left: -100px;
+    
+
+}
+.lunbo ol li{
+    float:left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+    text-indent: -999em;
+    cursor: pointer;
+   
+}
+.lunbo ol li.active {
+    background-color: orange;
+}
+.left,
+.right {
+    font-size: 60px;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.left {
+    left: 25px;
+}
+
+.right {
+    right: 25px;
+}
+.news{
+    width: 170px;
+    height:100%;
+    float: left;
+}
+.news .zhongxin{
+    width:170px;
+    height: 170px;
+    background-color: yellow;
+}
+.news .remen{
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+}
+.news ul li{
+    margin-top: 5px;
+}
+.news ul li span{
+    color:red;
+}
+.news ol{
+    width: 170px;
+}
+.news ol li{
+    width: 56px;
+    height: 72px;
+    float:left;
+    text-align: center;
+}
+.footer_nav{
+    background-color: #D8D8D8;
+}
+.footer_nav .fuwu li{
+    float: left;
+    width: 20%;
+    margin:20px 0;
+}
+.footer_nav .zhinan ul {
+    margin-top: 20px;
+    float: left;
+    width: 16%;  
+}
+.footer_nav .zhinan ul li:last-child{
+    margin-bottom: 20px;
+}
+.footer{
+    width: 1190px;
+    height: 200px;
+    text-align: center;
+}
+.footer p:first-child{
+    margin-top: 30px;
+}
+.footer p{
+    margin-bottom: 5px;
+}
+.footer p span{
+    width: 1px;
+    height: 13px;
+    margin: 0 5px;
+    display:inline-block;
+    vertical-align:middle;
+    opacity:.4;
+    background:#d8d8d8
+
+}

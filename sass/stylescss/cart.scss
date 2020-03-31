@@ -1,0 +1,158 @@
+@import "toolbar";
+@import"logo";
+@import"footer_nav";
+@import "footer";
+.goodcart{
+    width: 990px;
+    margin: 0 auto;
+    .goodcart_top{
+        width: 100%;
+        height: 40px;
+        p{
+            line-height: 40px;
+            font-size: 20px;
+            font-weight: 600;
+            color:red;
+            text-indent: 5px;
+        }
+    }
+    .goodcarttitle{
+        border: 2px solid #EEE0E5;
+        text-decoration: none;
+        text-align: center;
+        background-color: #F0F0F0;
+        height: 40px;
+        line-height: 40px;;
+        .quanxuan{
+            width: 50px;
+            float:left;    
+        }
+        .cart_img{
+            width: 80px;
+            float:left; 
+            margin-left: 30px;  
+        }
+        .cart_goods{
+            width: 100px;
+            float:left
+        }
+        .cart_price{
+            width: 100px;
+            float:left;
+            margin-left: 300px;
+        }
+        .cart_num{
+            width: 100px;
+            float:left
+        }
+        .cart_sum{
+            width: 100px;
+            float:left
+        }
+        .cart_caozuo{
+            width: 100px;
+            float:left
+        }
+    } 
+    .goodlist{
+        width:986px;
+        border: 2px solid #EEE0E5;
+        text-align: center;
+        background-color: #FFEFDB;
+        height: 110px;
+        display:none; 
+        .goodlist1{   
+            width:986px;
+            height: 110px;        
+            display: flex;
+            align-items:center;
+        } 
+        // .quanxuan1{
+        //     //float:left;
+        // } 
+        .cart_img{
+            width: 80px;
+            height: 80px;
+            margin-left: 30px;
+            //float:left;
+            img{
+                width: 78px;
+                height: 78px;
+                border: 1px solid #F2F2F2;
+            }
+        }
+        .cart_goods{
+            width: 300px;
+            //float:left;
+            span{
+                padding-left: 10px;
+                text-indent: 5px;
+                text-align: none
+                
+            }
+        }
+        .cart_price{
+            margin-left: 100px;
+            width: 100px;
+            //float:left;
+        }
+        .cart_num{
+            width: 100px;
+            //float:left;
+            .numdown,.numup{
+                width: 15px;
+                height: 30px;
+                float:left;
+                border: 1px solid rgb(133, 133, 133);
+                background-color: white;
+            }
+            input{
+                width: 60px;
+                height: 30px;
+                float:left;
+                border-top: 1px solid rgb(133, 133, 133);
+                border-bottom: 1px solid rgb(133, 133, 133);
+                text-align: center;
+            }
+          
+        }
+        .cart_sum{
+            //float:left;
+            width: 100px;
+        }
+           
+        .cart_caozuo{
+            //float:left;
+            width: 100px;          
+        }
+
+
+    }
+}
+.goodlistfoot{
+    width: 990px;
+    height: 60px;
+    background-color:#F2F2F2;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .quanxuan2{
+        width:50px;
+        margin-left: 2px;
+    }
+    .del2{
+        width: 100px;
+        margin-left: 50px;
+    }
+    .xuanze{
+        width: 100px;
+        margin-left: 350px;
+        span{
+            text-align: center;
+        }
+    }
+    .zongjia{
+        width:250px;
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,1 @@
+"use strict";$(".include").each(function(){if($(this).attr("file2")){var i=$(this);$(this).load($(this).attr("file2"),function(t){i.after(t).remove()})}});

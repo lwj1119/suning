@@ -1,0 +1,282 @@
+.toolbar {
+  width: 100%;
+  background-color: #F0F8FF;
+  height: 36px;
+}
+.toolbar .toolbar-left {
+  width: 300px;
+  float: left;
+}
+.toolbar .toolbar-left li {
+  float: left;
+  line-height: 36px;
+  width: 58px;
+  text-align: center;
+  margin: 0 5px;
+}
+.toolbar .toolbar-right {
+  width: 700px;
+  float: right;
+  margin-right: 10px;
+}
+.toolbar .toolbar-right li {
+  float: left;
+  line-height: 36px;
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.logo {
+  height: 110px;
+}
+.logo .logoleft {
+  width: 190px;
+  float: left;
+}
+.logo .logoleft img {
+  width: 100%;
+}
+.logo .logoright {
+  float: left;
+  width: 160px;
+}
+.logo .logoright img {
+  width: 100%;
+}
+.logo .serach {
+  margin-left: 20px;
+  float: left;
+}
+.logo .serach .icon-sousuo {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  float: left;
+  margin-top: 30px;
+  border: 2px solid orange;
+  border-right: none;
+  color: #D8D8D8;
+  text-align: center;
+}
+.logo .serach .serach1 {
+  padding: 0;
+  margin-top: 30px;
+  width: 420px;
+  height: 40px;
+  border: 2px solid orange;
+  border-left: none;
+  float: left;
+}
+.logo .serach .serach2 {
+  padding: 0;
+  margin-top: 30px;
+  width: 120px;
+  height: 44px;
+  background-color: orange;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  float: left;
+  cursor: pointer;
+}
+.logo .serach p a {
+  padding-right: 8px;
+  margin: 0 5px;
+  border-right: 1px solid #D8D8D8;
+  color: #D8D8D8;
+  font-size: 12px;
+  line-height: 36px;
+}
+.logo .serach p a:hover {
+  color: red;
+}
+
+.footer_nav {
+  background-color: #D8D8D8;
+}
+.footer_nav .fuwu li {
+  float: left;
+  width: 20%;
+  margin: 20px 0;
+}
+.footer_nav .fuwu li p:nth-child(2) {
+  font-weight: 600;
+}
+.footer_nav .zhinan ul {
+  margin-top: 20px;
+  float: left;
+  width: 16%;
+}
+.footer_nav .zhinan ul li:last-child {
+  margin-bottom: 20px;
+}
+.footer_nav .zhinan ul li:first-child {
+  font-weight: 600;
+}
+
+.footer {
+  width: 1190px;
+  height: 200px;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 5px;
+}
+.footer p em {
+  width: 1px;
+  height: 12px;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: .8;
+  background: #595959;
+}
+.footer p:first-child {
+  margin-top: 30px;
+}
+
+.goodcart {
+  width: 990px;
+  margin: 0 auto;
+}
+.goodcart .goodcart_top {
+  width: 100%;
+  height: 40px;
+}
+.goodcart .goodcart_top p {
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+  text-indent: 5px;
+}
+.goodcart .goodcarttitle {
+  border: 2px solid #EEE0E5;
+  text-decoration: none;
+  text-align: center;
+  background-color: #F0F0F0;
+  height: 40px;
+  line-height: 40px;
+}
+.goodcart .goodcarttitle .quanxuan {
+  width: 50px;
+  float: left;
+}
+.goodcart .goodcarttitle .cart_img {
+  width: 80px;
+  float: left;
+  margin-left: 30px;
+}
+.goodcart .goodcarttitle .cart_goods {
+  width: 100px;
+  float: left;
+}
+.goodcart .goodcarttitle .cart_price {
+  width: 100px;
+  float: left;
+  margin-left: 300px;
+}
+.goodcart .goodcarttitle .cart_num {
+  width: 100px;
+  float: left;
+}
+.goodcart .goodcarttitle .cart_sum {
+  width: 100px;
+  float: left;
+}
+.goodcart .goodcarttitle .cart_caozuo {
+  width: 100px;
+  float: left;
+}
+.goodcart .goodlist {
+  width: 986px;
+  border: 2px solid #EEE0E5;
+  text-align: center;
+  background-color: #FFEFDB;
+  height: 110px;
+  display: none;
+}
+.goodcart .goodlist .goodlist1 {
+  width: 986px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+.goodcart .goodlist .cart_img {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+}
+.goodcart .goodlist .cart_img img {
+  width: 78px;
+  height: 78px;
+  border: 1px solid #F2F2F2;
+}
+.goodcart .goodlist .cart_goods {
+  width: 300px;
+}
+.goodcart .goodlist .cart_goods span {
+  padding-left: 10px;
+  text-indent: 5px;
+  text-align: none;
+}
+.goodcart .goodlist .cart_price {
+  margin-left: 100px;
+  width: 100px;
+}
+.goodcart .goodlist .cart_num {
+  width: 100px;
+}
+.goodcart .goodlist .cart_num .numdown, .goodcart .goodlist .cart_num .numup {
+  width: 15px;
+  height: 30px;
+  float: left;
+  border: 1px solid #858585;
+  background-color: white;
+}
+.goodcart .goodlist .cart_num input {
+  width: 60px;
+  height: 30px;
+  float: left;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
+  text-align: center;
+}
+.goodcart .goodlist .cart_sum {
+  width: 100px;
+}
+.goodcart .goodlist .cart_caozuo {
+  width: 100px;
+}
+
+.goodlistfoot {
+  width: 990px;
+  height: 60px;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.goodlistfoot .quanxuan2 {
+  width: 50px;
+  margin-left: 2px;
+}
+.goodlistfoot .del2 {
+  width: 100px;
+  margin-left: 50px;
+}
+.goodlistfoot .xuanze {
+  width: 100px;
+  margin-left: 350px;
+}
+.goodlistfoot .xuanze span {
+  text-align: center;
+}
+.goodlistfoot .zongjia {
+  width: 250px;
+  margin-left: 50px;
+}
+
+/*# sourceMappingURL=cart.css.map */

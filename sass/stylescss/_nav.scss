@@ -1,0 +1,31 @@
+.nav{   
+    height: 38px;
+    a{
+        line-height: 38px;
+        font-size: 15px;
+        margin: 0 10px;
+        font-weight: 600;
+        float:left;
+        &:hover{
+            color:red
+        }
+    }
+    a:first-child{
+        width: 190px;
+        height: 38px;
+        background-color: orange;
+        color:white;
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+    img{
+        width: 170px;
+        height: 38px;
+        float:right;
+    
+    }
+}
+
+
+

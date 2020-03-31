@@ -1,0 +1,30 @@
+.toolbar{
+    width: 100%;
+    background-color:#F0F8FF;
+    height: 36px;
+
+    .toolbar-left{
+        width: 300px;
+        float:left;
+        li{
+            float:left;
+            line-height: 36px;
+            width: 58px;
+            text-align: center;
+            margin: 0 5px;
+        }
+    }
+    .toolbar-right{
+        width: 700px;
+        float:right;        
+        margin-right: 10px;
+        li{
+            float:left;
+            line-height: 36px;
+            width: 50px;
+            text-align: center;
+            margin: 0 10px;
+        }
+    }
+
+}

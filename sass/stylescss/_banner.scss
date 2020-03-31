@@ -1,0 +1,141 @@
+// .banner .banner_nav ul li.active{
+//     background-color:orange;
+//     color:white;
+// }
+.banner{
+    height: 482px;
+    .banner_nav{
+        background-color:black;
+        width: 190px;
+        float:left;
+        height: 482px;
+        position: relative;
+        ul li{
+            width: 100%;
+            height: 32px;
+            line-height: 32px;
+            font-size: 13px;
+            color:white;
+            text-align: center;
+            em{
+                width: 1px;
+                height: 13px;
+                margin: 0 5px;
+                display:inline-block;
+                vertical-align:middle;
+                opacity:.4;
+                background:#d8d8d8  
+            }
+        }
+        li.active{
+            background-color:white;
+            a{
+                color:orange;
+            }
+        }
+        .list{
+            width: 800px;
+            position: absolute;
+            top:0;
+            left:190px;
+            z-index: 99;
+            display:none;
+            min-height: 468px;
+            border: 1px solid #f7f7f7;
+            background-color: #fff;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+            transition: top 0.3s ease;
+        
+            .list1{
+                padding: 10px;
+                display:none;
+                background-color: white;
+            }
+        }
+    }
+    .lunbo{
+        width: 830px;
+        height: 482px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        ul{
+            width: 100%;
+            position: absolute;
+            left:0;
+            top:0;
+            li img{
+                width: 830px;
+                height: 482px;
+                display: block;          
+                float:left;
+
+            }           
+        }
+        ol{
+            position: absolute;
+            left:50%;
+            bottom: 20px;
+            width: 240px;
+            margin-left: -100px;
+            li{
+                float:left;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #ccc;
+                margin-right: 10px;
+                text-indent: -999em;
+                cursor: pointer;              
+            }
+            .active {
+                background-color: orange;
+                }
+        
+        }
+        .left,.right {
+        font-size: 60px;
+        color: #fff;
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        }
+        .left {
+        left: 25px;
+        }
+        .right {
+        right: 25px;
+        }
+    }
+    .news{
+        width: 170px;
+        height:100%;
+        float: left;
+        .zhongxin{
+            width:170px;
+            height: 170px;
+            background-color: yellow;
+        }
+        .remen{
+            width: 170px;
+            height: 170px;
+            overflow: hidden;
+            li{
+                margin-top: 5px;
+                span{
+                    color:red;
+                }
+            }
+        }
+        ol{
+            width: 170px;
+            li{
+                width: 56px;
+                height: 72px;
+                float:left;
+                text-align: center;
+            }
+        }
+    }
+}

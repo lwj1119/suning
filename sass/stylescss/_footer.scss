@@ -1,0 +1,21 @@
+.footer{
+    width: 1190px;
+    height: 200px;
+    text-align: center;
+    p{
+        margin-bottom: 5px;
+        em{
+            width: 1px;
+            height: 12px;
+            margin: 0 5px 0 5px;
+            display:inline-block;
+            vertical-align:middle;
+            opacity:.8;
+            background:#595959; 
+              
+        }
+    }
+    p:first-child{
+        margin-top: 30px;
+    }
+}

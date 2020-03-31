@@ -1,0 +1,405 @@
+.toolbar {
+  width: 100%;
+  background-color: #F0F8FF;
+  height: 36px;
+}
+.toolbar .toolbar-left {
+  width: 300px;
+  float: left;
+}
+.toolbar .toolbar-left li {
+  float: left;
+  line-height: 36px;
+  width: 58px;
+  text-align: center;
+  margin: 0 5px;
+}
+.toolbar .toolbar-right {
+  width: 700px;
+  float: right;
+  margin-right: 10px;
+}
+.toolbar .toolbar-right li {
+  float: left;
+  line-height: 36px;
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.logo {
+  height: 110px;
+}
+.logo .logoleft {
+  width: 190px;
+  float: left;
+}
+.logo .logoleft img {
+  width: 100%;
+}
+.logo .logoright {
+  float: left;
+  width: 160px;
+}
+.logo .logoright img {
+  width: 100%;
+}
+.logo .serach {
+  margin-left: 20px;
+  float: left;
+}
+.logo .serach .icon-sousuo {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  float: left;
+  margin-top: 30px;
+  border: 2px solid orange;
+  border-right: none;
+  color: #D8D8D8;
+  text-align: center;
+}
+.logo .serach .serach1 {
+  padding: 0;
+  margin-top: 30px;
+  width: 420px;
+  height: 40px;
+  border: 2px solid orange;
+  border-left: none;
+  float: left;
+}
+.logo .serach .serach2 {
+  padding: 0;
+  margin-top: 30px;
+  width: 120px;
+  height: 44px;
+  background-color: orange;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  float: left;
+  cursor: pointer;
+}
+.logo .serach p a {
+  padding-right: 8px;
+  margin: 0 5px;
+  border-right: 1px solid #D8D8D8;
+  color: #D8D8D8;
+  font-size: 12px;
+  line-height: 36px;
+}
+.logo .serach p a:hover {
+  color: red;
+}
+
+.nav {
+  height: 38px;
+}
+.nav a {
+  line-height: 38px;
+  font-size: 15px;
+  margin: 0 10px;
+  font-weight: 600;
+  float: left;
+}
+.nav a:hover {
+  color: red;
+}
+.nav a:first-child {
+  width: 190px;
+  height: 38px;
+  background-color: orange;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-left: 0;
+}
+.nav img {
+  width: 170px;
+  height: 38px;
+  float: right;
+}
+
+.banner {
+  height: 482px;
+}
+.banner .banner_nav {
+  background-color: black;
+  width: 190px;
+  float: left;
+  height: 482px;
+  position: relative;
+}
+.banner .banner_nav ul li {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+}
+.banner .banner_nav ul li em {
+  width: 1px;
+  height: 13px;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: .4;
+  background: #d8d8d8;
+}
+.banner .banner_nav li.active {
+  background-color: white;
+}
+.banner .banner_nav li.active a {
+  color: orange;
+}
+.banner .banner_nav .list {
+  width: 800px;
+  position: absolute;
+  top: 0;
+  left: 190px;
+  z-index: 99;
+  display: none;
+  min-height: 468px;
+  border: 1px solid #f7f7f7;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: top 0.3s ease;
+}
+.banner .banner_nav .list .list1 {
+  padding: 10px;
+  display: none;
+  background-color: white;
+}
+.banner .lunbo {
+  width: 830px;
+  height: 482px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.banner .lunbo ul {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.banner .lunbo ul li img {
+  width: 830px;
+  height: 482px;
+  display: block;
+  float: left;
+}
+.banner .lunbo ol {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 240px;
+  margin-left: -100px;
+}
+.banner .lunbo ol li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+  text-indent: -999em;
+  cursor: pointer;
+}
+.banner .lunbo ol .active {
+  background-color: orange;
+}
+.banner .lunbo .left, .banner .lunbo .right {
+  font-size: 60px;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+}
+.banner .lunbo .left {
+  left: 25px;
+}
+.banner .lunbo .right {
+  right: 25px;
+}
+.banner .news {
+  width: 170px;
+  height: 100%;
+  float: left;
+}
+.banner .news .zhongxin {
+  width: 170px;
+  height: 170px;
+  background-color: yellow;
+}
+.banner .news .remen {
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+}
+.banner .news .remen li {
+  margin-top: 5px;
+}
+.banner .news .remen li span {
+  color: red;
+}
+.banner .news ol {
+  width: 170px;
+}
+.banner .news ol li {
+  width: 56px;
+  height: 72px;
+  float: left;
+  text-align: center;
+}
+
+.seckill {
+  height: 330px;
+  background-color: #D8D8D8;
+}
+.seckill .left {
+  float: left;
+  width: 790px;
+  background-color: white;
+  margin-top: 20px;
+}
+.seckill .left .daoji {
+  height: 46px;
+}
+.seckill .left .daoji img {
+  margin-left: 20px;
+  width: 91px;
+  height: 26px;
+  float: left;
+  margin-top: 13px;
+}
+.seckill .left .daoji p {
+  width: 56px;
+  height: 16px;
+  margin-left: 20px;
+  float: left;
+  margin-top: 13px;
+}
+.seckill .left .daoji span {
+  width: 80px;
+  height: 16px;
+  margin-top: 13px;
+  color: red;
+  display: inline-block;
+  margin-left: 20px;
+}
+.seckill .left .daoji ul {
+  float: right;
+  margin-right: 15px;
+}
+.seckill .left .daoji ul li {
+  float: left;
+  margin-left: 20px;
+  width: 130px;
+  font-size: 14px;
+  margin-top: 13px;
+}
+.seckill .left .daoji ul .li1 {
+  border-radius: 20px;
+  background-color: orange;
+  text-align: center;
+  color: white;
+}
+.seckill .left .product {
+  height: 264px;
+}
+.seckill .left .product li {
+  float: left;
+  overflow: hidden;
+  margin-left: 20px;
+}
+.seckill .left .product li .biaoti {
+  width: 160px;
+}
+.seckill .left .product li img {
+  width: 170px;
+  height: 170px;
+}
+.seckill .left .product li .yuan {
+  margin-left: 0px;
+  font-size: 15px;
+  color: red;
+  font-weight: 600;
+}
+.seckill .left .product li .xian {
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+.seckill .right {
+  background-color: white;
+  margin-top: 20px;
+  float: right;
+}
+.seckill .right .top {
+  width: 390px;
+  height: 46px;
+}
+.seckill .right .top img {
+  margin-left: 20px;
+  width: 91px;
+  height: 25px;
+  margin-top: 13px;
+}
+.seckill .right .bottom {
+  width: 390px;
+  height: 264px;
+}
+.seckill .right .bottom img {
+  margin-left: 20px;
+  width: 350px;
+  height: 175px;
+}
+
+.footer_nav {
+  background-color: #D8D8D8;
+}
+.footer_nav .fuwu li {
+  float: left;
+  width: 20%;
+  margin: 20px 0;
+}
+.footer_nav .fuwu li p:nth-child(2) {
+  font-weight: 600;
+}
+.footer_nav .zhinan ul {
+  margin-top: 20px;
+  float: left;
+  width: 16%;
+}
+.footer_nav .zhinan ul li:last-child {
+  margin-bottom: 20px;
+}
+.footer_nav .zhinan ul li:first-child {
+  font-weight: 600;
+}
+
+.footer {
+  width: 1190px;
+  height: 200px;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 5px;
+}
+.footer p em {
+  width: 1px;
+  height: 12px;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: .8;
+  background: #595959;
+}
+.footer p:first-child {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=index.css.map */

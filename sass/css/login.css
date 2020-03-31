@@ -1,0 +1,251 @@
+.span0, .login_main .name span, .login_main .password span, .login_main .repass span, .login_main .shouji span, .login_main .yanzheng span, .login_main .email span {
+  width: 200px;
+  height: 42px;
+  line-height: 40px;
+  position: absolute;
+  top: -1px;
+  right: -200px;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+.w1 {
+  width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  height: 88px;
+}
+.logo img {
+  width: 190px;
+  height: 88px;
+  float: left;
+}
+.logo .welcome {
+  width: 72px;
+  height: 88px;
+  line-height: 88px;
+  font-size: 18px;
+  float: left;
+  margin-left: 25px;
+}
+.logo .log {
+  width: 130px;
+  height: 18px;
+  float: right;
+  margin-right: 100px;
+  margin-top: 60px;
+}
+
+.login_main {
+  border: 1px solid #BDBDBD;
+  border-top: 3px solid orange;
+  background-color: white;
+}
+.login_main input:focus {
+  outline: none;
+}
+.login_main .liwu {
+  width: 380px;
+  height: 40px;
+  margin-left: 300px;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 40px;
+}
+.login_main .name {
+  width: 380px;
+  height: 40px;
+  margin-left: 300px;
+  line-height: 40px;
+  margin-top: 5px;
+  border: 1px solid #A4A4A4;
+  text-indent: 10px;
+  position: relative;
+}
+.login_main .name .name1 {
+  width: 70px;
+  float: left;
+}
+.login_main .name .name2 {
+  float: left;
+}
+.login_main .name .name2 input {
+  width: 100%;
+}
+.login_main .password {
+  width: 380px;
+  height: 40px;
+  margin-left: 300px;
+  line-height: 40px;
+  margin-top: 20px;
+  border: 1px solid #A4A4A4;
+  text-indent: 10px;
+  position: relative;
+}
+.login_main .password .password1 {
+  width: 70px;
+  float: left;
+}
+.login_main .password .password2 {
+  float: left;
+}
+.login_main .password .password2 input {
+  width: 300px;
+}
+.login_main .repass {
+  width: 380px;
+  height: 40px;
+  margin-left: 300px;
+  line-height: 40px;
+  margin-top: 20px;
+  border: 1px solid #A4A4A4;
+  text-indent: 10px;
+  position: relative;
+}
+.login_main .repass .repass1 {
+  width: 70px;
+  float: left;
+}
+.login_main .repass .repass2 {
+  float: left;
+}
+.login_main .repass .repass2 input {
+  width: 300px;
+}
+.login_main .shouji {
+  width: 380px;
+  height: 40px;
+  margin-left: 300px;
+  line-height: 40px;
+  margin-top: 20px;
+  border: 1px solid #A4A4A4;
+  text-indent: 10px;
+  position: relative;
+}
+.login_main .shouji .shouji1 {
+  width: 70px;
+  float: left;
+}
+.login_main .shouji .shouji2 {
+  width: 210px;
+  float: left;
+}
+.login_main .shouji .shouji2 input {
+  height: 100%;
+}
+.login_main .shouji .shouji3 {
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+.login_main .shouji .shouji3 input {
+  width: 90px;
+  height: 40px;
+}
+.login_main .yanzheng {
+  width: 380px;
+  height: 40px;
+  margin-left: 300px;
+  line-height: 40px;
+  margin-top: 20px;
+  border: 1px solid #A4A4A4;
+  text-indent: 10px;
+  position: relative;
+}
+.login_main .yanzheng .yanzheng1 {
+  width: 70px;
+  float: left;
+}
+.login_main .yanzheng .yanzheng2 {
+  float: left;
+}
+.login_main .yanzheng .yanzheng2 input {
+  width: 100%;
+}
+.login_main .email {
+  width: 380px;
+  height: 40px;
+  margin-left: 300px;
+  line-height: 40px;
+  margin-top: 20px;
+  border: 1px solid #A4A4A4;
+  text-indent: 10px;
+  position: relative;
+}
+.login_main .email .email1 {
+  width: 70px;
+  float: left;
+}
+.login_main .email .email2 {
+  float: left;
+}
+.login_main .email .email2 input {
+  width: 300px;
+}
+.login_main .zhuce {
+  width: 380px;
+  height: 40px;
+  margin-left: 300px;
+  margin-top: 50px;
+  line-height: 40px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.login_main .zhuce input {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+}
+
+.footer_nav {
+  background-color: #D8D8D8;
+}
+.footer_nav .fuwu li {
+  float: left;
+  width: 20%;
+  margin: 20px 0;
+}
+.footer_nav .fuwu li p:nth-child(2) {
+  font-weight: 600;
+}
+.footer_nav .zhinan ul {
+  margin-top: 20px;
+  float: left;
+  width: 16%;
+}
+.footer_nav .zhinan ul li:last-child {
+  margin-bottom: 20px;
+}
+.footer_nav .zhinan ul li:first-child {
+  font-weight: 600;
+}
+
+.footer {
+  width: 1190px;
+  height: 200px;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 5px;
+}
+.footer p em {
+  width: 1px;
+  height: 12px;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: .8;
+  background: #595959;
+}
+.footer p:first-child {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=login.css.map */

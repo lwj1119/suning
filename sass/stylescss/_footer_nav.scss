@@ -1,0 +1,22 @@
+.footer_nav{
+    background-color: #D8D8D8;
+    .fuwu li{
+        float: left;
+        width: 20%;
+        margin:20px 0;
+        p:nth-child(2){
+            font-weight: 600;
+        }
+    }
+    .zhinan ul {
+        margin-top: 20px;
+        float: left;
+        width: 16%; 
+        li:last-child{
+            margin-bottom: 20px;
+        } 
+    }
+    .zhinan ul li:first-child{
+        font-weight: 600;
+    }
+}
