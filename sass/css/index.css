@@ -155,7 +155,8 @@
   color: orange;
 }
 .banner .banner_nav .list {
-  width: 800px;
+  width: 900px;
+  height: 760px;
   position: absolute;
   top: 0;
   left: 190px;
@@ -166,11 +167,40 @@
   background-color: #fff;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   transition: top 0.3s ease;
+  overflow: hidden;
 }
 .banner .banner_nav .list .list1 {
-  padding: 10px;
   display: none;
   background-color: white;
+}
+.banner .banner_nav .list .list1 ul li {
+  float: left;
+  width: 150px;
+  height: 180px;
+  margin: 5px 10px;
+}
+.banner .banner_nav .list .list1 ul li img {
+  width: 146px;
+  height: 146px;
+  padding: 2px;
+}
+.banner .banner_nav .list .list1 ul li a {
+  color: black;
+}
+.banner .banner_nav .list .list1 ul li p {
+  height: 12px;
+  line-height: 12px;
+  text-indent: 5px;
+  color: black;
+}
+.banner .banner_nav .list .list1 ul li .price1 {
+  color: red;
+  font-weight: 600;
+}
+.banner .banner_nav .list .list1 ul li .num1 {
+  color: black;
+  font-weight: 600;
+  margin-left: 20px;
 }
 .banner .lunbo {
   width: 830px;
@@ -311,27 +341,40 @@
 .seckill .left .product {
   height: 264px;
 }
-.seckill .left .product li {
+.seckill .left .product ul {
+  overflow: hidden;
+  height: 100%;
+}
+.seckill .left .product ul li {
+  height: 264px;
+  width: 180px;
   float: left;
   overflow: hidden;
-  margin-left: 20px;
-}
-.seckill .left .product li .biaoti {
-  width: 160px;
-}
-.seckill .left .product li img {
-  width: 170px;
-  height: 170px;
-}
-.seckill .left .product li .yuan {
-  margin-left: 0px;
-  font-size: 15px;
-  color: red;
-  font-weight: 600;
-}
-.seckill .left .product li .xian {
   margin-left: 10px;
-  text-decoration: line-through;
+  margin-bottom: 10px;
+}
+.seckill .left .product ul li img {
+  width: 176px;
+  height: 176px;
+  padding: 2px;
+  margin-bottom: 5px;
+}
+.seckill .left .product ul li p {
+  height: 20px;
+  line-height: 20px;
+  text-indent: 5px;
+  color: black;
+}
+.seckill .left .product ul li .price1 {
+  color: red;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.seckill .left .product ul li .num1 {
+  color: black;
+  font-weight: 600;
+  margin-left: 20px;
 }
 .seckill .right {
   background-color: white;
@@ -356,6 +399,61 @@
   margin-left: 20px;
   width: 350px;
   height: 175px;
+}
+
+.main {
+  background-color: #D8D8D8;
+}
+.main .computer .computer1 {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  color: red;
+  font-size: 18px;
+}
+.main .computer .computer1 a {
+  margin-left: 500px;
+  font-weight: 500;
+  font-size: 12px;
+  color: black;
+}
+.main .computer ul {
+  width: 1190px;
+  height: 264px;
+  background-color: white;
+  overflow: hidden;
+}
+.main .computer ul li {
+  height: 264px;
+  width: 180px;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.main .computer ul li img {
+  width: 176px;
+  height: 176px;
+  padding: 2px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.main .computer ul li p {
+  width: 160px;
+  height: 20px;
+  line-height: 20px;
+  text-indent: 5px;
+  color: black;
+}
+.main .computer ul li .price1 {
+  color: red;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.main .computer ul li .num1 {
+  color: black;
+  font-weight: 600;
+  margin-left: 20px;
 }
 
 .footer_nav {

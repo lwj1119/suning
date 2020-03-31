@@ -1,0 +1,58 @@
+.main{
+    background-color: #D8D8D8;
+    .computer{
+       .computer1{
+           height: 40px;
+           line-height: 40px;
+           font-weight: 600;
+           color:red;
+           font-size: 18px;
+           a{
+               margin-left: 500px;
+               font-weight: 500;
+               font-size: 12px;
+               color:black;
+           }           
+       }
+       ul{
+        width:1190px;
+        height: 264px;
+        background-color: white;
+        overflow: hidden;
+        li{  
+         height:264px;
+         width:180px;
+         float: left;
+         margin-left: 10px;
+         margin-bottom: 10px;         
+             img{
+                 width: 176px;
+                 height: 176px;
+                 padding: 2px;
+                 margin-bottom: 5px;
+                 margin-top: 20px;
+              }
+             p{
+                 width: 160px;
+                 height: 20px;
+                 line-height: 20px;
+                 text-indent: 5px;
+                 color:black;
+                 }
+             .price1{
+                 color:red;
+                 font-size: 15px;
+                 font-weight: 600;
+                 margin-bottom: 30px;
+                 }
+             .num1{
+                 color:black;
+                 font-weight: 600;
+                 margin-left: 20px;
+                 }
+         }
+     }
+       
+
+    }
+}

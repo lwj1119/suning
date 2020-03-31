@@ -32,6 +32,7 @@ $(".include").each(function() {
     }).done(function (data) {   //返回渲染的数据
         let $strhtml = '<ul>'; //渲染框架
         $.each(data, function (index, value) {//对渲染的数据进行遍历
+            console.log(value);
             $strhtml += `
             <li>
              <a href="detal.html?sid=${value.sid}"  target="_blank">

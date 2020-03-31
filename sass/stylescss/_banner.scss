@@ -34,7 +34,8 @@
             }
         }
         .list{
-            width: 800px;
+            width: 900px;
+            height: 760px;
             position: absolute;
             top:0;
             left:190px;
@@ -45,11 +46,43 @@
             background-color: #fff;
             box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
             transition: top 0.3s ease;
+            overflow: hidden;
         
-            .list1{
-                padding: 10px;
+            .list1{              
                 display:none;
                 background-color: white;
+                ul li{
+                    float:left;
+                    width: 150px;
+                    height: 180px;
+                    margin: 5px 10px;
+                    img{
+                        width: 146px;
+                        height: 146px;
+                        padding:2px;
+                    }
+                    a{
+                        color:black
+                    }
+                    p{
+                        height: 12px;
+                        line-height: 12px;
+                        text-indent: 5px;
+                        color:black;
+                    }
+                    .price1{
+                         color:red;
+                         font-weight: 600;
+                         //margin-bottom: 30px;
+                    }
+                    .num1{
+                        color:black;
+                        font-weight: 600;
+                        margin-left: 20px;
+                    }
+
+                    
+                }
             }
         }
     }
@@ -69,7 +102,6 @@
                 height: 482px;
                 display: block;          
                 float:left;
-
             }           
         }
         ol{
