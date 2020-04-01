@@ -93,16 +93,20 @@
         position: relative;
         overflow: hidden;
         ul{
-            width: 100%;
             position: absolute;
             left:0;
             top:0;
-            li img{
-                width: 830px;
-                height: 482px;
-                display: block;          
+            li{
                 float:left;
-            }           
+                
+                img{
+                    width: 830px;
+                    height: 482px;
+                    display: block;          
+                    //float:left;
+                }      
+            }
+           
         }
         ol{
             position: absolute;

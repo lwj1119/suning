@@ -6,3 +6,21 @@
 @import"main";
 @import"footer_nav";
 @import "footer";
+.louti{
+    width: 60px;
+    height: 220px;
+    position:fixed;
+    left:20px;
+    top:100px;
+    background-color: #F0F0F0;
+    text-align: center;
+    display: none;
+    li{
+        border-bottom: 1px dashed #EEE0E5;;
+    }
+    .active{
+        background-color: coral;
+    }
+};
+
+

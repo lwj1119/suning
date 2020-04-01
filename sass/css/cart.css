@@ -28,6 +28,7 @@
 }
 
 .logo {
+  width: 1190px;
   height: 110px;
 }
 .logo .logoleft {
@@ -91,6 +92,14 @@
 }
 .logo .serach p a:hover {
   color: red;
+}
+
+.active11 {
+  position: fixed;
+  top: 0;
+  left: 80px;
+  z-index: 99;
+  background-color: white;
 }
 
 .footer_nav {

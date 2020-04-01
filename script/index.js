@@ -76,33 +76,92 @@ $(".include").each(function () {
     }();
 
     //轮播图渲染
-    !function () {
+    // !function () {
+    //     let $olli = $('.banner .lunbo ol li');
+    //     let $ulli = $('.banner .lunbo ul li');
+    //     $olli.on('mouseover', function () {
+    //         $(this).addClass("active").siblings('li').removeClass("active");
+    //         $ulli.eq($(this).index()).show().siblings('li').hide();
+    //     });
+    //     let $left = $('.banner .left');
+    //     let $right = $('.banner .right');
+    //     $left.on('click', function () {
+    //         //alert(1);
+    //         let $index = $(this).parents('.banner').find('.active').index();
+    //         if ($index < 1) {
+    //             $index = $olli.length;
+    //         }
+    //         $olli.eq($index - 1).addClass("active").siblings('li').removeClass("active");
+    //         $ulli.eq($index - 1).show().siblings('li').hide();
+    //     });
+    //     $right.on('click', function () {
+    //         let $index = $(this).parents('.banner').find('.active').index();
+    //         $olli.eq($index + 1).addClass("active").siblings('li').removeClass("active");
+    //         $ulli.eq($index + 1).show().siblings('li').hide();
+    //         if ($index >= $olli.length - 1) {
+    //             $olli.eq(0).addClass("active").siblings('li').removeClass("active");
+    //             $ulli.eq(0).show().siblings('li').hide();
+    //         }
+    //     });
+    // }();
+
+    
+    //幻灯片渲染
+    !function(){
         let $olli = $('.banner .lunbo ol li');
         let $ulli = $('.banner .lunbo ul li');
-        $olli.on('mouseover', function () {
-            $(this).addClass("active").siblings('li').removeClass("active");
-            $ulli.eq($(this).index()).show().siblings('li').hide();
-        });
-        let $left = $('.banner .left');
-        let $right = $('.banner .right');
-        $left.on('click', function () {
-            //alert(1);
-            let $index = $(this).parents('.banner').find('.active').index();
-            if ($index < 1) {
-                $index = $olli.length;
+        let $width=$ulli.length*$ulli.eq(0).width()+'px';
+        //console.log($width);
+        $('.banner .lunbo ul').css({
+            width:$width
+        })
+
+        $olli.on('mouseover',function(){
+            $(this).addClass('active').siblings('li').removeClass('active');
+            let $index=$(this).index();
+            //alert($index)
+            $width=$ulli.eq(0).width()*$index;        
+            $('.lunbo ul').css({              
+                left:-$width+'px',
+                
+            })
+        })
+        //左右箭头
+        let $left=$('.lunbo .left');
+        let $right=$('.lunbo .right');
+        $left.on('click',function(){
+            //alert(1)
+            //alert($index)
+            let $index=$(this).parents('.lunbo').find('.active').index();
+            //alert($index)
+            $olli.eq($index-1).addClass('active').siblings('li').removeClass('active');
+            $left=$ulli.eq(0).width()*$index;
+            $('.lunbo ul').css({              
+                left:-$left+'px',
+                
+            })
+        }); 
+
+        $right.on('click',function(){
+            //alert(1)
+            //alert($index)
+            let $index=$(this).parents('.lunbo').find('.active').index();
+            //alert($index)
+            $olli.eq($index+1).addClass('active').siblings('li').removeClass('active');
+            $left=$ulli.eq(0).width()*$index;
+            $('.lunbo ul').css({              
+                left:-$left+'px',
+                
+            });
+            if($index >=$olli.length-1){
+                $olli.eq(0).addClass('active').siblings('li').removeClass('active');
+                $left=$ulli.eq(0).width()*$index;
+                $('.lunbo ul').css({              
+                    left:-$left+'px',
+                    
+                });
             }
-            $olli.eq($index - 1).addClass("active").siblings('li').removeClass("active");
-            $ulli.eq($index - 1).show().siblings('li').hide();
-        });
-        $right.on('click', function () {
-            let $index = $(this).parents('.banner').find('.active').index();
-            $olli.eq($index + 1).addClass("active").siblings('li').removeClass("active");
-            $ulli.eq($index + 1).show().siblings('li').hide();
-            if ($index >= $olli.length - 1) {
-                $olli.eq(0).addClass("active").siblings('li').removeClass("active");
-                $ulli.eq(0).show().siblings('li').hide();
-            }
-        });
+        }); 
     }();
 
 
@@ -134,7 +193,7 @@ $(".include").each(function () {
     });
 }(jQuery);
 
-
+//楼层渲染
 !function ($) {
     $.ajax({
         url: 'http://localhost/jsLwj/src/suning/php/index.php',
@@ -158,17 +217,16 @@ $(".include").each(function () {
         $ul.html($strhtml);
         $(function () {
                 $("img.lazy1").lazyload({ effect: "fadeIn" });
-        });
-        
+        });  
 
         $('.computer a').on('click', function () {
             $strhtml = ``;
             let arr1 = new Array();
             let arr2 = new Array();
-            for (var i = 0; i < 20; i++) {
+            for (var i = 0; i < 24; i++) {
                 arr1.push(i);
             }
-            for (var k = 0; k < 10; k++) {
+            for (var k = 0; k < 12; k++) {
                 var id = Math.ceil(Math.random() * 19);
                 if (arr2.indexOf(arr1[id]) === -1) {
                     arr2.push(arr1[id]);
@@ -194,14 +252,70 @@ $(".include").each(function () {
                 $("img.lazy2").lazyload({ effect: "fadeIn" });
             });
         });
+    });
+}(jQuery);
+ //楼梯效果 滑动鼠标 根据鼠标位置 显示对应的楼梯
+ !function($){
+     let $louti=$('.louti');
+     let $loutili=$('.louti li');
+     let $louceng=$('.computer');
 
+     $(window).on('scroll',function(){
+        let $top=$(window).scrollTop();
+        $top>500?$louti.show():$louti.hide();
+        //console.log($top);
+        $louceng.each(function(index,element){
+            let $loutop=$louceng.eq(index).offset().top-$(element).height()/2;
+            if($top>$loutop){
+                $loutili.eq(index).addClass("active").siblings('li').removeClass("active")
 
+            }
+        });
+     });
+// 给楼梯添加点击效果 点击楼梯 跳转到对应的楼层
+     $loutili.not('.last').on('click',function(){
+        //alert($(this).index())
+        let $index=$(this).index();
+        //$(this).addClass("active").siblings('li').removeClass("active");      
+        let $top1=$louceng.eq($index).offset().top;
+        //alert($top1)       
+        $('html,body').animate({scrollTop: $top1},function(){
+            $(window).on('scroll',function(){
+                let $top=$(window).scrollTop();
+                $top>800?$louti.show():$louti.hide();
+                //console.log($top);
+                $louceng.each(function(index,element){
+                    let $loutop=$louceng.eq(index).offset().top-$(element).height()/2;
+                    if($top>$loutop){
+                        $loutili.eq(index).addClass("active").siblings('li').removeClass("active")
+        
+                    }
+                });
+             });         
+        });       
+     });
 
+     //返回底部
+     $('.last').on('click',function(){
+         $('html,body').animate({  
+            scrollTop: 0
+        });
+     })
+ }(jQuery);
+ //搜索框顶部悬浮效果
+!function($){
+    $(window).on('scroll',function(){
+        //alert(1);
+        let $top=$(window).scrollTop();
+        if($top>800){
+            //alert(1)
+            $('.logo').addClass("active11")
+        }else{
+            $('.logo').removeClass("active11");
+        }
+        
 
     });
-
-
-
 }(jQuery);
 
 

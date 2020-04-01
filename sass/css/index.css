@@ -28,6 +28,7 @@
 }
 
 .logo {
+  width: 1190px;
   height: 110px;
 }
 .logo .logoleft {
@@ -91,6 +92,14 @@
 }
 .logo .serach p a:hover {
   color: red;
+}
+
+.active11 {
+  position: fixed;
+  top: 0;
+  left: 80px;
+  z-index: 99;
+  background-color: white;
 }
 
 .nav {
@@ -210,16 +219,17 @@
   overflow: hidden;
 }
 .banner .lunbo ul {
-  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
+}
+.banner .lunbo ul li {
+  float: left;
 }
 .banner .lunbo ul li img {
   width: 830px;
   height: 482px;
   display: block;
-  float: left;
 }
 .banner .lunbo ol {
   position: absolute;
@@ -419,7 +429,7 @@
 }
 .main .computer ul {
   width: 1190px;
-  height: 264px;
+  height: 550px;
   background-color: white;
   overflow: hidden;
 }
@@ -498,6 +508,23 @@
 }
 .footer p:first-child {
   margin-top: 30px;
+}
+
+.louti {
+  width: 60px;
+  height: 220px;
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  background-color: #F0F0F0;
+  text-align: center;
+  display: none;
+}
+.louti li {
+  border-bottom: 1px dashed #EEE0E5;
+}
+.louti .active {
+  background-color: coral;
 }
 
 /*# sourceMappingURL=index.css.map */

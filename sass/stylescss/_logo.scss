@@ -1,5 +1,7 @@
 .logo{
+    width: 1190px;
     height: 110px;
+    
    
     .logoleft{
         width: 190px;
@@ -65,5 +67,12 @@
         
         }
     }
+}
+.active11{
+    position: fixed;
+    top:0;
+    left:80px;
+    z-index: 99;
+    background-color: white;
 }
 
